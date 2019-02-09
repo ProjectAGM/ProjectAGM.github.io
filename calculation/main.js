@@ -48,7 +48,7 @@ function main(heightWindow, widthWindow, heightFrame, widthFrame, areaFloor) {
   return {
     areaWindow : windowFF.areaWindow+"<br>",
     areaFrame : windowFF.areaFrame+"<br>",
-    areaFloor : parseInt(floorF.areaFloor)+"<br>",
+    areaFloor : parseFloat(floorF.areaFloor)+"<br>",
     areaDiffWin : windowFF.areaDifference+"<br>",
     areaDiffFlr : floorPercentage(windowFF,floorF)+"<br>"
   }
