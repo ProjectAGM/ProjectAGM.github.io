@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <script src="main.js" charset="utf-8"></script>
+  <body>
+    Floor Area: <input type="text" id="floor"><br>
+    Window Height: <input type="text" id="wdHg"><br>
+    Window Width: <input type="text" id="wdWd"><br>
+    Frame Height: <input type="text" id="fmHg"><br>
+    Frame Width: <input type="text" id="fmWd"><br>
+    <button type="button" id="button" onclick="calc()">Calculate</button><br>
+    <script type="text/javascript">
+      function calc() {
+        var mainOut = main(document.getElementById("wdHg").value,document.getElementById("wdWd").value,document.getElementById("fmHg").value,document.getElementById("fmWd").value,document.getElementById("floor").value);
+        document.getElementById("output").innerHTML = JSON.stringify(mainOut);
+      };
+    </script>
+    <p id="output"><p>
+  </body>
+</html>
