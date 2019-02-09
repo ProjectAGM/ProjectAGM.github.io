@@ -7,12 +7,12 @@
   </head>
   <script src="main.js" charset="utf-8"></script>
   <body>
-    Floor Area: <input type="number" id="floor"><br>
-    Window Height: <input type="number" id="wdHg"><br>
-    Window Width: <input type="number" id="wdWd"><br>
-    Frame Height: <input type="number" id="fmHg"><br>
-    Frame Width: <input type="number" id="fmWd"><br>
-    <button type="button" id="button" onclick="calc()">Calculate</button><br>
+    <p>Floor Area: <input type="number" id="floor"></p><br>
+    <p>Window Height: <input type="number" id="wdHg"></p><br>
+    <p>Window Width: <input type="number" id="wdWd"></p><br>
+    <p>Frame Height: <input type="number" id="fmHg"></p><br>
+    <p>Frame Width: <input type="number" id="fmWd"></p><br>
+    <p><button type="button" id="button" onclick="calc()">Calculate</button></p><br>
     <script type="text/javascript">
       function calc() {
         var mainOut = main(document.getElementById("wdHg").value,document.getElementById("wdWd").value,document.getElementById("fmHg").value,document.getElementById("fmWd").value,document.getElementById("floor").value);
